@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Contador from './components/Contador'
+import Card from './components/layout/Card';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default () => (
 
-export default App;
+      <div className="App">
+          <h1>Contador</h1>
+
+          <div className="Cards" >
+
+              <Card titulo="Contador componentizado" color="#34495E">
+                  <Contador numeroInicial={10} />
+              </Card>
+
+          </div>
+      </div>
+
+);
